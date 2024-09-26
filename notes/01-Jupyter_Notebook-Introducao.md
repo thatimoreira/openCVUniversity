@@ -1,236 +1,50 @@
-#Introdução ao Jupyter Notebook
+# Introdução ao Jupyter Notebook
 
-O Jupyter Notebook é um ambiente web interativo amplamente utilizado para programação, análise de dados e visualização, especialmente em Python, mas também suporta outras linguagens como Julia e R. Originalmente chamado de IPython Notebook, foi renomeado para refletir seu suporte a várias linguagens.
-Modos do Jupyter
+O **Jupyter Notebook** é uma ferramenta super prática e poderosa para quem trabalha com programação e análise de dados, principalmente em Python. Ele também suporta outras linguagens, como Julia e R. No passado, ele era conhecido como *IPython Notebook*, mas o nome mudou para refletir o suporte a várias linguagens.
 
-O Jupyter possui dois modos principais:
+<br>
 
-    Modo Comando: Indicado por uma borda azul ao redor da célula. Aqui, comandos podem ser usados para controlar o notebook.
-    Modo Edição: Indicado por uma borda verde ao redor da célula. Nesse modo, o código ou markdown da célula pode ser editado.
-
-PrinciIntrodução ao Jupyter Notebook
-
-O Jupyter Notebook é um ambiente web interativo amplamente utilizado para programação, análise de dados e visualização, especialmente em Python, mas também suporta outras linguagens como Julia e R. Originalmente chamado de IPython Notebook, foi renomeado para refletir seu suporte a várias linguagens.
-Modos do Jupyter
+## Modos do Jupyter
 
 O Jupyter possui dois modos principais:
 
-    Modo Comando: Indicado por uma borda azul ao redor da célula. Aqui, comandos podem ser usados para controlar o notebook.
-    Modo Edição: Indicado por uma borda verde ao redor da célula. Nesse modo, o código ou markdown da célula pode ser editado.
+- **Modo Comando**: quando tem uma borda azul ao redor da célula. Aqui podemos usar comandos para controlar o notebook
+- **Modo Edição**: quando a célula tem uma borda verde. Nesse modo podemos alterar o conteúdo da célula
 
-Principais Comandos no Modo Comando
+<br>
 
-Aqui estão alguns comandos essenciais que você precisa saber:
+### Principais atalhos no Modo Comando
 
-    a: Cria uma nova célula acima da célula selecionada.
-    b: Cria uma nova célula abaixo da célula selecionada.
-    Ctrl + Enter: Executa a célula atual.
-    dd: Deleta a célula selecionada.
-    ii: Interrompe o kernel (útil quando seu código está em loop ou travado).
-    00: Reinicia o kernel (cuidado: isso limpará todas as variáveis e o histórico de execução).
+- ```a```: insere uma nova célula acima da atual
+- ```b```: insere uma nova célula abaixo da atual
+- ```Ctrl + Enter```: Executa a célula atual
+- ```dd```: deleta a célula atual
+- ```ii```: interrompe o kernel (útil quando o código trava ou entra em em loop)
+- ```00```: reinicia o kernel (**cuidado**, pois isso apaga todas as variáveis e o histórico de execução)
+- ```h```: acessar todos os atalhos disponíveis. Abre uma janela com os atalhos de teclado<br><br>
 
-Caso queira acessar todos os atalhos disponíveis, basta pressionar h, o que abrirá uma janela com os atalhos de teclado.
-Principais Comandos no Modo Edição
+### Principais atalhos no Modo Edição
 
-Enquanto estiver editando uma célula, você pode utilizar alguns atalhos úteis, como:
+Enquanto estiver editando uma célula, alguns atalhos também podem ser super úteis:
+- ```Shift + Tab```: Mostra a documentação sobre uma função ou método. Tecle quatro vezes para que a janela permaneça fixa na tela
+- ```Ctrl + Enter```: Executa a célula e permanece no modo de edição
+- ```Esc```: Sai do modo de edição e retorna para o modo comando<br><br>
 
-    Shift + Tab: Exibe a documentação sobre uma função ou método. Pressione quatro vezes para que a janela de documentação permaneça fixa.
-    Ctrl + Enter: Executa a célula e permanece no modo de edição.
-    Esc: Sai do modo de edição e retorna ao modo comando.
+### Dicas Avançadas
+- ```?```: coloque um ponto de interrogação após uma função para ver sua documentação (exemplo: ```print?```)
+- ```??```: coloque dois pontos de interrogação após uma função para ver seu código-fonte (exemplo: ```print??```)<br><br>
 
-Dicas Avançadas
+### Magias do Jupyter
 
-    ?: Coloque um ponto de interrogação após uma função para ver sua documentação (por exemplo, print?).
-    ??: Coloque dois pontos de interrogação após uma função para visualizar o código-fonte da função (por exemplo, print??).
+Além de código Python, o Jupyter tem alguns "truques", que são comandos especiais precedidos por ```%``` ou ```%%```. Alguns exemplos úteis são:
+- ```%matplotlib inline```: faz com que os gráficos gerados pelo ```matplotlib``` sejam exibidos diretamente no notebook
+- ```%timeit```: mede quanto tempo um trecho de código leva para ser de executado
+- ```%lsmagic```: para ver todas as magias disponíveis com o comando %lsmagic. E se quiser detalhes de alguma, basta usar o ```?``` depois do noime (exemplo: ```%timeit?```)
 
-Magias do Jupyter
+<br>
 
-Além de código Python, o Jupyter oferece "magias", que são comandos especiais precedidos por % ou %%. Por exemplo:
+## Quando Usar o Jupyter
 
-    %matplotlib inline: Garante que os gráficos gerados pelo matplotlib sejam exibidos diretamente no notebook.
-    %timeit: Mede o tempo de execução de uma célula ou linha de código.
+O Jupyter é excelente para experimentação e exploração de dados, visualização de gráficos e teste de algoritmos. Se você está tentando entender um algoritmo ou experimentar algo novo, ele é a ferramenta ideal. Mas, se o seu objetivo é desenvolver aplicações em produção ou um código mais robusto, com várias classes e testes, talvez seja melhor usar um editor como **VS Code** ou **Py Charm**.
 
-Você pode visualizar todas as magias disponíveis com o comando %lsmagic. Para obter mais detalhes sobre uma magia específica, utilize o ? (por exemplo, %timeit?).
-Quando Usar o Jupyter
-
-O Jupyter é excelente para experimentação e exploração de dados, visualização de gráficos e teste de algoritmos. Contudo, se seu objetivo é desenvolver aplicações em produção ou organizar projetos com múltiplas classes e testes, um editor como VS Code ou PyCharm pode ser mais adequado.
-
-No entanto, ferramentas como Jupyter Lab oferecem um ambiente mais completo, semelhante a uma IDE, integrando as funcionalidades do Jupyter com mais recursos de desenvolvimento.pais Comandos no Modo Comando
-
-Aqui estão alguns comandos essenciais que você precisa saber:
-
-    a: Cria uma nova célula acima da célula selecionada.
-    b: Cria uma nova célula abaixo da célula selecionada.
-    Ctrl + Enter: Executa a célula atual.
-    dd: Deleta a célula selecionada.
-    ii: Interrompe o kernel (útil quando seu código está em loop ou travado).
-    00: Reinicia o kernel (cuidado: isso limpará todas as variáveis e o histórico de execução).
-
-Caso queira acessar todos os atalhos disponíveis, basta pressionar h, o que abrirá uma janela com os atalhos de teclado.
-Principais Comandos no Modo Edição
-
-Enquanto estiver editando uma célula, você pode utilizar alguns atalhos úteis, como:
-
-    Shift + Tab: Exibe a documentação sobre uma função ou método. Pressione quatro vezes para que a janela de documentação permaneça fixa.
-    Ctrl + Enter: Executa a célula e permanece no modo de edição.
-    Esc: Sai do modo de edição e retorna ao modo comando.
-
-Dicas Avançadas
-
-    ?: Coloque um ponto de interrogação após uma função para ver sua documentação (por exemplo, print?).
-    ??: Coloque dois pontos de interrogação após uma função para visualizar o código-fonte da função (por exemplo, print??).
-
-Magias do Jupyter
-
-Além de código Python, o Jupyter oferece "magias", que são comandos especiais precedidos por % ou %%. Por exemplo:
-
-    %matplotlib inline: Garante que os gráficos gerados pelo matplotlib sejam exibidos diretamente no notebook.
-    %timeit: Mede o tempo de execução de uma célula ou linha de código.
-
-Você pode visualizar todas as magias disponíveis com o comando %lsmagic. Para obter mais detalhes sobre uma magia específica, utilize o ? (por exemplo, %timeit?).
-Quando Usar o Jupyter
-
-O Jupyter é excelente para experimentação e exploração de dados, visualização de gráficos e teste de algoritmos. Contudo, se seu objetivo é desenvolver aplicações em produção ou organizar projetos com múltiplas classes e testes, um editor como VS Code ou PyCharm pode ser mais adequado.
-
-No entanto, ferramentas como Jupyter Lab oferecem um ambiente mais completo, semelhante a uma IDE, integrando as funcionalidades do Jupyter com mais recursos de desenvolvimento.# Introdução ao Jupyter Notebook
-
-O Jupyter Notebook é um ambiente web interativo amplamente utilizado para programação, análise de dados e visualização, especialmente em Python, mas também suporta outras linguagens como Julia e R. Originalmente chamado de IPython Notebook, foi renomeado para refletir seu suporte a várias linguagens.
-Modos do Jupyter
-
-O Jupyter possui dois modos principais:
-
-    Modo Comando: Indicado por uma borda azul ao redor da célula. Aqui, comandos podem ser usados para controlar o notebook.
-    Modo Edição: Indicado por uma borda verde ao redor da célula. Nesse modo, o código ou markdown da célula pode ser editado.
-
-Principais Comandos no Modo Comando
-
-Aqui estão alguns comandos essenciais que você precisa saber:
-Introdução ao Jupyter Notebook
-
-O Jupyter Notebook é um ambiente web interativo amplamente utilizado para programação, análise de dados e visualização, especialmente em Python, mas também suporta outras linguagens como Julia e R. Originalmente chamado de IPython Notebook, foi renomeado para refletir seu suporte a várias linguagens.
-Modos do Jupyter
-
-O Jupyter possui dois modos principais:
-
-    Modo Comando: Indicado por uma borda azul ao redor da célula. Aqui, comandos podem ser usados para controlar o notebook.
-    Modo Edição: Indicado por uma borda verde ao redor da célula. Nesse modo, o código ou markdown da célula pode ser editado.
-
-Principais Comandos no Modo Comando
-
-Aqui estão alguns comandos essenciais que você precisa saber:
-
-    a: Cria uma nova célula acima da célula selecionada.
-    b: Cria uma nova célula abaixo da célula selecionada.
-    Ctrl + Enter: Executa a célula atual.
-    dd: Deleta a célula selecionada.
-    ii: Interrompe o kernel (útil quando seu código está em loop ou travado).
-    00: Reinicia o kernel (cuidado: isso limpará todas as variáveis e o histórico de execução).
-
-Caso queira acessar todos os atalhos disponíveis, basta pressionar h, o que abrirá uma janela com os atalhos de teclado.
-Principais Comandos no Modo Edição
-
-Enquanto estiver editando uma célula, você pode utilizar alguns atalhos úteis, como:
-
-    Shift + Tab: Exibe a documentação sobre uma função ou método. Pressione quatro vezes para que a janela de documentação permaneça fixa.
-    Ctrl + Enter: Executa a célula e permanece no modo de edição.
-    Esc: Sai do modo de edição e retorna ao modo comando.
-
-Dicas Avançadas
-
-    ?: Coloque um ponto de interrogação após uma função para ver sua documentação (por exemplo, print?).
-    ??: Coloque dois pontos de interrogação após uma função para visualizar o código-fonte da função (por exemplo, print??).
-
-Magias do Jupyter
-
-Além de código Python, o Jupyter oferece "magias", que são comandos especiais precedidos por % ou %%. Por exemplo:
-
-    %matplotlib inline: Garante que os gráficos gerados pelo matplotlib sejam exibidos diretamente no notebook.
-    %timeit: Mede o tempo de execução de uma célula ou linha de código.
-
-Você pode visualizar todas as magias disponíveis com o comando %lsmagic. Para obter mais detalhes sobre uma magia específica, utilize o ? (por exemplo, %timeit?).
-Quando Usar o Jupyter
-
-O Jupyter é excelente para experimentação e exploração de dados, visualização de gráficos e teste de algoritmos. Contudo, se seu objetivo é desenvolver aplicações em produção ou organizar projetos com múltiplas classes e testes, um editor como VS Code ou PyCharm pode ser mais adequado.
-
-No entanto, ferramentas como Jupyter Lab oferecem um ambiente mais completo, semelhante a uma IDE, integrando as funcionalidades do Jupyter com mais recursos de desenvolvimento.
-    a: Cria uma nova célula acima da célula selecionada.
-    b: Cria uma nova célula abaixo da célula selecionada.
-    Ctrl + Enter: Executa a célula atual.
-    dd: Deleta a célula selecionada.
-    ii: Interrompe o kernel (útil quando seu código está em loop ou travado).
-    00: Reinicia o kernel (cuidado: isso limpará todas as variáveis e o histórico de execução).
-
-Caso queira acessar todos os atalhos disponíveis, basta pressionar h, o que abrirá uma janela com os atalhos de teclado.
-Principais Comandos no Modo Edição
-
-Enquanto estiver editando uma célula, você pode utilizar alguns atalhos úteis, como:
-
-    Shift + Tab: Exibe a documentação sobre uma função ou método. Pressione quatro vezes para que a janela de documentação permaneça fixa.
-    Ctrl + Enter: Executa a célula e permanece no modo de edição.
-    Esc: Sai do modo de edição e retorna ao modo comando.
-
-Dicas Avançadas
-
-    ?: Coloque um ponto de interrogação após uma função para ver sua documentação (por exemplo, print?).
-    ??: Coloque dois pontos de interrogação após uma função para visualizar o código-fonte da função (por exemplo, print??).
-
-Magias do Jupyter
-
-Além de código Python, o Jupyter oferece "magias", que são comandos especiais precedidos por % ou %%. Por exemplo:
-
-    %matplotlib inline: Garante que os gráficos gerados pelo matplotlib sejam exibidos diretamente no notebook.
-    %timeit: Mede o tempo de execução de uma célula ou linha de código.
-
-Você pode visualizar todas as magias disponíveis com o comando %lsmagic. Para obter mais detalhes sobre uma magia específica, utilize o ? (por exemplo, %timeit?).
-Quando Usar o Jupyter
-
-O Jupyter é excelente para experimentação e exploração de dados, visualização de gráficos e teste de algoritmos. Contudo, se seu objetivo é desenvolver aplicações em produção ou organizar projetos com múltiplas classes e testes, um editor como VS Code ou PyCharm pode ser mais adequado.
-
-No entanto, ferramentas como Jupyter Lab oferecem um ambiente mais completo, semelhante a uma IDE, integrando as funcionalidades do Jupyter com mais recursos de desenvolvimento.Introdução ao Jupyter Notebook
-
-O Jupyter Notebook é um ambiente web interativo amplamente utilizado para programação, análise de dados e visualização, especialmente em Python, mas também suporta outras linguagens como Julia e R. Originalmente chamado de IPython Notebook, foi renomeado para refletir seu suporte a várias linguagens.
-Modos do Jupyter
-
-O Jupyter possui dois modos principais:
-
-    Modo Comando: Indicado por uma borda azul ao redor da célula. Aqui, comandos podem ser usados para controlar o notebook.
-    Modo Edição: Indicado por uma borda verde ao redor da célula. Nesse modo, o código ou markdown da célula pode ser editado.
-
-Principais Comandos no Modo Comando
-
-Aqui estão alguns comandos essenciais que você precisa saber:
-
-    a: Cria uma nova célula acima da célula selecionada.
-    b: Cria uma nova célula abaixo da célula selecionada.
-    Ctrl + Enter: Executa a célula atual.
-    dd: Deleta a célula selecionada.
-    ii: Interrompe o kernel (útil quando seu código está em loop ou travado).
-    00: Reinicia o kernel (cuidado: isso limpará todas as variáveis e o histórico de execução).
-
-Caso queira acessar todos os atalhos disponíveis, basta pressionar h, o que abrirá uma janela com os atalhos de teclado.
-Principais Comandos no Modo Edição
-
-Enquanto estiver editando uma célula, você pode utilizar alguns atalhos úteis, como:
-
-    Shift + Tab: Exibe a documentação sobre uma função ou método. Pressione quatro vezes para que a janela de documentação permaneça fixa.
-    Ctrl + Enter: Executa a célula e permanece no modo de edição.
-    Esc: Sai do modo de edição e retorna ao modo comando.
-
-Dicas Avançadas
-
-    ?: Coloque um ponto de interrogação após uma função para ver sua documentação (por exemplo, print?).
-    ??: Coloque dois pontos de interrogação após uma função para visualizar o código-fonte da função (por exemplo, print??).
-
-Magias do Jupyter
-
-Além de código Python, o Jupyter oferece "magias", que são comandos especiais precedidos por % ou %%. Por exemplo:
-
-    %matplotlib inline: Garante que os gráficos gerados pelo matplotlib sejam exibidos diretamente no notebook.
-    %timeit: Mede o tempo de execução de uma célula ou linha de código.
-
-Você pode visualizar todas as magias disponíveis com o comando %lsmagic. Para obter mais detalhes sobre uma magia específica, utilize o ? (por exemplo, %timeit?).
-Quando Usar o Jupyter
-
-O Jupyter é excelente para experimentação e exploração de dados, visualização de gráficos e teste de algoritmos. Contudo, se seu objetivo é desenvolver aplicações em produção ou organizar projetos com múltiplas classes e testes, um editor como VS Code ou PyCharm pode ser mais adequado.
-
-No entanto, ferramentas como Jupyter Lab oferecem um ambiente mais completo, semelhante a uma IDE, integrando as funcionalidades do Jupyter com mais recursos de desenvolvimento.
+Se você deseja uma experiência mais completa, o **Jupyter Lab** pode ser uma boa opção, pois ele conta com um ambiente mais parecido com o de uma IDE, integrando as funcionalidades do Jupyter com recursos de desenvolvimento.
