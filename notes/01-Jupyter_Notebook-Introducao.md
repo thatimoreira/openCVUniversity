@@ -45,6 +45,6 @@ Além de código Python, o Jupyter tem alguns "truques", que são comandos espec
 
 ## Quando Usar o Jupyter
 
-O Jupyter é excelente para experimentação e exploração de dados, visualização de gráficos e teste de algoritmos. Se você está tentando entender um algoritmo ou experimentar algo novo, ele é a ferramenta ideal. Mas, se o seu objetivo é desenvolver aplicações em produção ou um código mais robusto, com várias classes e testes, talvez seja melhor usar um editor como **VS Code** ou **Py Charm**.
+O Jupyter é excelente para experimentação e exploração de dados, visualização de gráficos e teste de algoritmos. Se você está tentando entender um algoritmo ou experimentar algo novo, ele é a ferramenta ideal. Mas, se o seu objetivo é desenvolver aplicações em produção ou um código mais robusto, com várias classes e testes, talvez seja melhor usar um editor como **VS Code** ou **PyCharm**.
 
 Se você deseja uma experiência mais completa, o **Jupyter Lab** pode ser uma boa opção, pois ele conta com um ambiente mais parecido com o de uma IDE, integrando as funcionalidades do Jupyter com recursos de desenvolvimento.
